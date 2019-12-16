@@ -1,0 +1,10 @@
+export const actions = {
+    FETCH_TEST_CONTENT:"FETCH_TEST_CONTENT",
+    SET_QUESTION_ATTEMPT:"SET_QUESTION_ATTEMPT",
+    RESET_ATTEMPTS:"RESET_ATTEMPTS"
+}
+
+export const questionAttemptStatus = {
+    CORRECT:'CORRECT',
+    INCORRECT:'INCORRECT'
+}
