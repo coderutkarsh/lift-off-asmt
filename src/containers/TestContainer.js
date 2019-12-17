@@ -7,12 +7,12 @@ import Question from '../components/Question'
 import Button from '@material-ui/core/Button';
 import BarGraph from '../components/common/BarGraph'
 import {questionAttemptStatus} from '../constants'
+import '../../style/style.css'
 class TestContainer extends Component{
     constructor(props){
         super(props)
         this.state={showResult:false,submitted:false}
     }  
-
     Handlers={
         handleSubmit:()=>{
             this.setState({showResult:true,submitted:true})  
