@@ -2,15 +2,6 @@
  * with fields type and payload */
 import {testContent} from '../Data'
 import {actions} from '../constants'
-
-export function selectMovie(movie){
-    //console.log('a Movie has been selected',movie.title)
-    return {
-        type:'MOVIE_SELECTED',
-        payload:movie
-    }
-}
-
 export function fetchTestContent(){
      return{
          type:actions.FETCH_TEST_CONTENT,
