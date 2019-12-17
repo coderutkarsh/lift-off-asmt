@@ -62,13 +62,10 @@ class Question extends React.Component{
                   if(attemptForQuestion){
                       return attemptForQuestion.selected
                   }   
-            
                 }
-                
             }
          return ""
         }
-
     }
     
 
