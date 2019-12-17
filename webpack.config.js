@@ -15,7 +15,16 @@ module.exports = {
         query: {
           presets: ['react', 'es2015', 'stage-1']
         }
-      }
+      },
+      {
+        loader: require.resolve('css-loader'),
+        options: {
+            modules: true, //must add this
+            importLoaders: 1,
+            minimize: true,
+            sourceMap: shouldUseSourceMap,
+        },
+    }
     ]
   },
   resolve: {

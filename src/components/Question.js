@@ -14,11 +14,6 @@ class Question extends React.Component{
         super(props)
         this.state={selectedOption:""}
     }
-    
-
-
-
-
     Handlers={
         handleOptionSelect:(e)=>{
             let selectedValue = e.target.value
@@ -115,10 +110,7 @@ class Question extends React.Component{
    }
 
     render(){
-        // console.log("question props",this.props)
-
-        console.log("question net data",this.DataHelpers.getAttemptStatus())
-        let questionWrapperClass='question-wrapper'
+       let questionWrapperClass='question-wrapper'
        if(this.props.status && this.props.status===questionAttemptStatus.INCORRECT){
         questionWrapperClass+=' disabled'
        }
