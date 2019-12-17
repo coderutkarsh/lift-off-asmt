@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import {setQuestionOption} from '../actions/testActions'
 import {questionAttemptStatus} from '../constants'
+import '../../style/style.css'
 
 class Question extends React.Component{
     constructor(props){
